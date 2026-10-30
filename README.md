@@ -24,6 +24,10 @@ path = kagglehub.dataset_download("praveengovi/emotions-dataset-for-nlp")
 No Kaggle API key is needed for this public dataset. If there is no internet, the app falls
 back to a small sample in `data/sample_emotions.csv` so it still runs.
 
+> ⚠️ The offline sample is only ~240 sentences, so the emotion model trained on it is close to
+> random guessing, and the bandit can't tell moods apart. Always check the Training page says
+> `Source: kagglehub: …` before a demo — with the real dataset the model should be far more accurate.
+
 ## Setup & run
 ```bash
 pip install -r requirements.txt
